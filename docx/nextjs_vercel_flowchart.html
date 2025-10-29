@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next.js Deployment Flow</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e1116;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .box {
+      background: #1a1f29;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+    .arrow {
+      font-size: 1.5rem;
+      color: #6cf;
+    }
+  </style>
+</head>
+<body>
+  <h2>🚀 Next.js → GitHub → Vercel → Hostinger Flow</h2>
+  <div class="flow">
+    <div class="box">1️⃣ VS Code<br><small>(Local development)</small></div>
+    <div class="arrow">➡️</div>
+
+    <div class="box">2️⃣ Git + GitHub<br><small>(Version control + repo sync)</small></div>
+    <div class="arrow">➡️</div>
+
+    <div class="box">3️⃣ Vercel<br><small>(Deployment + hosting)</small></div>
+    <div class="arrow">➡️</div>
+
+    <div class="box">4️⃣ Hostinger DNS<br><small>(Domain points to Vercel)</small></div>
+  </div>
+
+  <p style="margin-top: 2rem; color: #aaa; font-size: 0.9rem;">Each code push to GitHub automatically triggers a Vercel redeploy 🚀</p>
+</body>
+</html>
